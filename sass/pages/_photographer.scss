@@ -1,0 +1,186 @@
+.photographer-page {
+  @media screen and (min-width: 600px) {
+    //padding: 0 10%;
+  }
+}
+
+.ph {
+  &-header {
+    display: flex;
+    padding: 2%;
+    position: relative;
+    margin: 0 1% 0 2%;
+    background-color: $color-header;
+    @media (min-width: 600px) {
+      margin: 0 4%;
+      padding: 0 3%;
+    }
+    @media (min-width: 990px) {
+      margin: 3% 3% 4% 100px;
+    }
+    & > img {
+      @include img-css;
+      margin-left: auto;
+    }
+  }
+  &-contact {
+    @include btnType1;
+    font-size: 1em;
+    margin-left: 20px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-60%);
+    bottom: 2em;
+    border: none;
+    height: 40px;
+    @media (min-width: 990px) {
+      font-size: 20px;
+      position: absolute;
+      height: 56px;
+      top: 20%;
+      left: 52%;
+    }
+    @media (min-width: 1300px) {
+      left: 45%;
+      height: 69px;
+    }
+  }
+  &-name {
+    color: $color-secondary;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 344px;
+    @media (min-width: 600px) {
+      font-size: 46px;
+    }
+    @media (min-width: 1300px) {
+      font-size: 64px;
+      max-width: 400px;
+    }
+  }
+  &-city {
+    color: $color-primary;
+    font-size: 18px;
+    font-weight: 400;
+    @media (min-width: 600px) {
+      font-size: 24px;
+    }
+  }
+  &-tagline {
+    color: $tagline-color;
+    font-size: 13px;
+    font-weight: 400;
+    @media (min-width: 600px) {
+      font-size: 18px;
+    }
+  }
+  &-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &-data {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: -10px;
+    right: 5%;
+    background-color: $form-color;
+    color: black;
+    width: 376px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    & > span {
+      & > i {
+        margin-left: 10px;
+      }
+    }
+    @media (min-width: 990px) {
+      display: flex;
+    }
+  }
+}
+
+.works-elts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+  padding: 0 20px;
+
+  @media (min-width: 1200px) {
+    margin: 50px 100px;
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+  }
+}
+
+.work-elt {
+  color: $color-primary;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 335px;
+  margin: 0 0 10px 0;
+
+  @media (min-width: 710px) {
+    margin: 0 5px 10px 5px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 350px;
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  a {
+    color: $color-primary;
+  }
+
+  img,
+  video {
+    width: 335px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+
+    @media (min-width: 1300px) {
+      width: 350px;
+      height: 300px;
+    }
+  }
+
+  img:hover,
+  video:hover {
+    cursor: pointer;
+  }
+
+  &-infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .work-title {
+    width: 225px;
+  }
+
+  .fa-heart {
+    margin-left: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

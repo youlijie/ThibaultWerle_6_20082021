@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px 20px;
+  @media (min-width: 990px) {
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 100px;
+  }
+  &-svg:hover path {
+    fill: $color-secondary;
+  }
+  & svg {
+    width: 150px;
+    @media (min-width: 990px) {
+      width: 200px;
+    }
+  }
+  &-navigation {
+    margin: 20px 0;
+    @media (min-width: 990px) {
+      margin: 0 215px 0 0;
+    }
+    @media (min-width: 1200px) {
+      margin: 0 0 0 30px;
+    }
+    @media (min-width: 1600px) {
+      margin: 0 0 0 80px;
+    }
+    & ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      & button {
+        text-transform: capitalize;
+      }
+    }
+    & > button {
+      &::before {
+        content: "#";
+      }
+      &:hover,
+      .selected {
+        border-color: $color-primary;
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
+}

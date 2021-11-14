@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+}
+h1 {
+  color: $color-primary;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+button {
+  border: 0.5px solid #c4c4c4;
+  border-radius: 11px;
+  padding: 0 0.5em;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  height: 22px;
+  color: $color-primary;
+}
